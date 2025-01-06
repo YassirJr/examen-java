@@ -218,13 +218,12 @@ public class MainController implements Initializable {
         List<Repas> repasList = MockData.getRepas();
 
         Command commande = Command.builder()
-                .client_id(MockData.getClient().getId()) // Assuming you have a method to get the current client
+                .client_id(MockData.getClient().getId()) 
                 .date(new java.util.Date())
                 .repas(repasList)
                 .total(repasList.stream().reduce(0.0, (total, repas) -> total + repas.getTotalPrix(), Double::sum))
                 .build();
 
-        // Save the commande and link it with the repas
         MockData.makeCommand(commande);
         showTicket();
         clearSelections();
