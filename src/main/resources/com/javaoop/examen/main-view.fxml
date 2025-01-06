@@ -2,30 +2,41 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 
-<BorderPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.javaoop.examen.controllers.MainController"
-            prefHeight="600.0" prefWidth="800.0">
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.javaoop.examen.controllers.MainController"
+      stylesheets="@styles.css">
 
-    <top>
-        <MenuBar>
-            <Menu text="Gestion">
-                <MenuItem text="Users" onAction="#showUsers"/>
-                <MenuItem text="Départements" onAction="#showDepartements"/>
-            </Menu>
-        </MenuBar>
-    </top>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
 
-    <center>
-        <TabPane fx:id="mainTabPane">
-            <Tab text="Professeurs" closable="false">
-                <fx:include source="user-table.fxml"/>
-            </Tab>
-            <Tab text="Départements" closable="false">
-                <fx:include source="user-table.fxml"/>
-            </Tab>
-        </TabPane>
-    </center>
+    <HBox spacing="20">
+        <!-- Left Side - Meal Selection -->
+        <VBox spacing="10" styleClass="section-box" HBox.hgrow="ALWAYS">
+            <Label text="Sélection du Repas" styleClass="section-title"/>
+            <ListView fx:id="platsListView" VBox.vgrow="ALWAYS"/>
 
-</BorderPane>
+            <Label text="Ingrédients Supplémentaires" styleClass="section-title"/>
+            <ListView fx:id="ingredientsListView" VBox.vgrow="ALWAYS"/>
+        </VBox>
+
+        <!-- Right Side - Supplements and Order Summary -->
+        <VBox spacing="10" styleClass="section-box" HBox.hgrow="ALWAYS">
+            <Label text="Suppléments" styleClass="section-title"/>
+            <ListView fx:id="supplementsListView" VBox.vgrow="ALWAYS"/>
+
+            <VBox styleClass="summary-box">
+                <Label text="Résumé de la commande" styleClass="section-title"/>
+                <Label fx:id="totalLabel" text="Total: 0.00 €"/>
+            </VBox>
+
+            <Button text="Confirmer la commande"
+                    fx:id="commandButton"
+                    onAction="#handleConfirmOrder"
+                    styleClass="confirm-button"
+                    maxWidth="Infinity"/>
+        </VBox>
+    </HBox>
+</VBox>

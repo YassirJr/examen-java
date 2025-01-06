@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaoop.examen.controllers.AssistantVocalController">
+    <children>
+        <Label text="Assistant Vocal" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <Button fx:id="recordButton" text="Enregistrer Commande" />
+        <Label fx:id="statusLabel" text="Statut: En attente" />
+        <Label fx:id="commandesLabel" text="Commandes:" />
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+</VBox>

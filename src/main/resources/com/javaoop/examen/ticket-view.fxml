@@ -1,0 +1,11 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" padding="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.javaoop.examen.controllers.TicketController">
+
+    <TextArea fx:id="ticketTextArea" VBox.vgrow="ALWAYS" editable="false"/>
+</VBox>

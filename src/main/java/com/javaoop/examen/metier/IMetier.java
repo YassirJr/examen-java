@@ -14,6 +14,4 @@ public interface IMetier<T> {
     void delete(Integer id);
 
     T search(String keyword);
-
-    Class<T> getType();
 }

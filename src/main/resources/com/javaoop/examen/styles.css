@@ -1,0 +1,34 @@
+/* src/main/resources/com/javaoop/examen/styles.css */
+.section-box {
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+
+.section-title {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+}
+
+.summary-box {
+    -fx-padding: 15;
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 5;
+}
+
+.confirm-button {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+.confirm-button:hover {
+    -fx-background-color: #218838;
+}
+
+.list-view {
+    -fx-background-radius: 5;
+}
