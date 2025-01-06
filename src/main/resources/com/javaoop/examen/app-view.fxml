@@ -11,8 +11,8 @@
     <top>
         <MenuBar>
             <Menu text="Gestion">
-                <MenuItem text="Professeurs" onAction="#main"/>
-                <MenuItem text="Départements" onAction="#vocal"/>
+                <MenuItem text="Gestion commandes" onAction="#main"/>
+                <MenuItem text="Vocal Assistant" onAction="#vocal"/>
             </Menu>
         </MenuBar>
     </top>

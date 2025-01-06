@@ -5,7 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaoop.examen.controllers.AssistantVocalController">
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaoop.examen.controllers.AssistantVocalController"
+stylesheets="@styles.css">
     <children>
         <Label text="Assistant Vocal" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
         <Button fx:id="recordButton" text="Enregistrer Commande" />

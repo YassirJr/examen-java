@@ -10,7 +10,6 @@ public class AssistantVocal {
         this.commandes = new ArrayList<>();
     }
 
-    // Simulates audio recording
     public void capturerCommandeAudio() {
         System.out.println("Enregistrement audio en cours...");
         try {
@@ -21,9 +20,7 @@ public class AssistantVocal {
         System.out.println("Enregistrement terminé.");
     }
 
-    // Simulates audio transcription
     public String transcrireAudioTexte() {
-        // Simulate transcription
         return "Ajouter 2 plats de pâtes";
     }
 
